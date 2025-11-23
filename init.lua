@@ -433,7 +433,7 @@ require('lazy').setup({
         ruff = {},
         eslint = {},
         cssls = {},
-        vue_ls = {},
+        --vue_ls = {},
         jdtls = {},
         lua_ls = {
           settings = {
@@ -464,7 +464,7 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
-        'prettier', -- Used to format web files: js, vue, css, etc.
+        --'prettier', -- Used to format web files: js, vue, css, etc.
         'ruff', -- format python files
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
